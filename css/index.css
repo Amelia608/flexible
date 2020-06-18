@@ -1,0 +1,253 @@
+/* 基础样式 */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+html,
+body {
+  overflow-y: auto;
+}
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+  padding: 0;
+  margin: 0;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+fieldset,
+img {
+  border: 0;
+}
+del,
+ins {
+  text-decoration: none;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+textarea {
+  resize: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+html,
+body {
+  height: 100vh;
+  position: relative;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  line-height: 54px;
+  background-color: #151a2d;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 0.853333rem;
+}
+.bread {
+  height: 100px;
+  margin-top: 54px;
+  padding: 20px 20px 0 20px;
+  color: #fff;
+  font-size: 0.768rem;
+  background: linear-gradient(90deg, #1770e0 0%, #064594 100%);
+}
+.app-main {
+  position: absolute;
+  top: 145px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../images/index_bg.png) no-repeat center center;
+  background-size: cover;
+}
+.main-content-wrapper {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  top: -40px;
+  display: flex;
+}
+.main-content-wrapper .left {
+  flex: 7;
+}
+.main-content-wrapper .right {
+  flex: 3;
+  margin-left: 16px;
+}
+.right-content-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.right-content-wrapper .item {
+  flex: 1;
+  position: relative;
+  text-align: center;
+  margin-bottom: 0.682667rem;
+  background: #202940;
+  border-radius: 4px;
+}
+.right-content-wrapper .item:last-child {
+  margin-bottom: 0;
+}
+.right-content-wrapper .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.133333rem;
+  border-bottom: 1px solid #2c3348;
+  padding: 0 0.682667rem;
+}
+.right-content-wrapper .header .txt {
+  font-size: 0.682667rem;
+  color: #fff;
+}
+.right-content-wrapper .cnt-box {
+  position: absolute;
+  top: 2.133333rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.right-content-wrapper .line-custom-legend {
+  display: flex;
+  align-items: center;
+  color: #c3cbde;
+  font-size: 0.426667rem;
+}
+.right-content-wrapper .line-custom-legend .round + .round {
+  margin-left: 16px;
+}
+.right-content-wrapper .line-custom-legend .round {
+  position: relative;
+  padding-left: 15px;
+}
+.right-content-wrapper .line-custom-legend .round::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.341333rem;
+  height: 0.256rem;
+  border-radius: 0.128rem;
+  background: #1572e8;
+}
+.right-content-wrapper .line-custom-legend .round:last-child::before {
+  background: #ffad46;
+}
+.left {
+  position: relative;
+}
+.left .info {
+  display: flex;
+}
+.left .box {
+  display: flex;
+  height: 90px;
+  align-items: center;
+  background: #202940;
+  border-radius: 4px;
+  flex: 1;
+}
+.left .box .item {
+  flex: 1;
+  text-align: center;
+  color: #c3cbde;
+  font-size: 0.512rem;
+  position: relative;
+}
+.left .box .item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  height: 48px;
+  width: 1px;
+  background: #2c3348;
+  transform: translateY(-50%);
+}
+.left .box:first-child {
+  margin-right: 16px;
+}
+.left .box .title {
+  font-size: 0.682667rem;
+}
+.left .box .number {
+  color: #fff;
+  font-size: 1.066667rem;
+}
+.left .map-box {
+  position: absolute;
+  top: 90px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
